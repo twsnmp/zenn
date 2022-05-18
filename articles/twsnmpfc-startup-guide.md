@@ -22,14 +22,21 @@ Windows版は、Microsoft Storeに公開しています。(v.1.11.0から）
 
 https://www.microsoft.com/store/apps/9NN1DG80K76M
 
-
-
 Microsoft Storeから直接インストールできます。
 
 ![](/images/twsnmpfc-startup-guide/1652299365939-kOn9ypqOW9.png)
 
 Server OSなどにインストールしたい場合はMSI形式のインストラーも用意
 しています。
+
+# Windows版のアンインストール
+
+Microsoft Storeからインストールした場合は、スタートメニューを
+右クリックすると「アンインストール」のメニュー表示されます。
+
+![](/images/twsnmpfc-startup-guide/2022-05-15_15-52-36.png)
+
+このメニューからアンイストールできます。
 
 # インストラーのダウンロード
 
