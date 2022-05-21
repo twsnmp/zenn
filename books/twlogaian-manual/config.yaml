@@ -1,0 +1,16 @@
+title: "TWLogAIANのマニュアル"
+summary: "AIアシスト付きログ分析ツールTWLogAIANのマニュアルです。"
+topics: ["syslog","アクセスログ","ログ分析","twsnmp","ホワイトハッカー"]
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - about
+  - install
+  - wellcome
+  - datasource
+  - settings
+  - search
+  - report
+  - extend
+
