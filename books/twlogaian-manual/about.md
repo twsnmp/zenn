@@ -1,5 +1,5 @@
 ---
-title: "TWLogAIANについて"
+title: "TWLogAIANについて知りたい人は"
 ---
 
 # TWLogAIANを作っている理由
