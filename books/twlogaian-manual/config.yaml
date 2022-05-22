@@ -8,8 +8,9 @@ chapters:
   - about
   - install
   - wellcome
-  - datasource
   - settings
+  - datasource
+  - indexor
   - search
   - report
   - extend
