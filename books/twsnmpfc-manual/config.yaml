@@ -1,5 +1,5 @@
 title: "TWSNMP FCのマニュアル"
-summary: "SNMPv3に対応したネットワーク管理ツールTWSNMPコンテナ版のマニュアルです。"
+summary: "SNMPv3に対応したネットワーク管理ツールTWSNMP(コンテナ対応版)のマニュアルです。"
 topics: ["SNMP","PING","syslog","NetFlow"]
 published: false
 price: 0 # 有料の場合200〜5000
