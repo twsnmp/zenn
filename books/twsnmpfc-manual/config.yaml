@@ -1,14 +1,14 @@
 title: "TWSNMP FCのマニュアル"
 summary: "SNMPv3に対応したネットワーク管理ツールTWSNMP(コンテナ対応版)のマニュアルです。"
 topics: ["SNMP","PING","syslog","NetFlow"]
-published: false
+published: true
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
   - about
   - install
   - makemap
-  - about_pagdes
+  - layout
   - node_list
   - node_info
   - node_conf
