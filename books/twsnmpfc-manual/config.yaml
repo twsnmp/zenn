@@ -16,7 +16,7 @@ chapters:
   - mib_browser
   - panel
   - host_resource
-  - poling_list
+  - polling_list
   - polling_info
   - discover
   - address
