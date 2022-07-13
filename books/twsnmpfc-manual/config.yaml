@@ -23,7 +23,7 @@ chapters:
   - sensors
   - ai
   - lan_device
-  - blutooth_device
+  - bluetooth_device
   - wifi_ap
   - env_sensor
   - user_report
