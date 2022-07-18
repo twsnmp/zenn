@@ -38,6 +38,7 @@ chapters:
   - windows_eventid_report
   - windows_logon_report
   - windows_account_report
+  - windows_kerberos_report
   - windows_priviage_report
   - windows_process_report
   - windows_task_report
