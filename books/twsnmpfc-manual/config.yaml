@@ -47,6 +47,7 @@ chapters:
   - snmp_tarp
   - netflow
   - arp_log
+  - map_conf
   - notify_conf
   - report_conf
   - influxdb_conf
