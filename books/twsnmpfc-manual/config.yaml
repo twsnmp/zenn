@@ -57,4 +57,5 @@ chapters:
   - backup_restore
   - knowhow_rx
   - knowhow_chart
-  
+  - knowhow_noconsole_win
+
