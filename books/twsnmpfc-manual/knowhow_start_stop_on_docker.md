@@ -1,12 +1,27 @@
 ---
-title: "Docker版の停止方法"
+title: "Docker版の起動/停止"
 ---
 
 
-大量のsyslogや Netflowを受信していて沢山のレポートデータを記録している（DBのサイズが毎日数GB増える）TWSNMP FCがDocker環境で動作している場合には停止する時に注意が必要です。
+Docker版の起動と停止の関する説明です。
+
+# 最新版に更新後に起動するスクリプト
+
+私が使っているDokcer環境のTWSNMP FCを最新版に保つためのスクリプトを紹介します。
+
+```
+#!/bin/sh
+docker stop -t 300  twsnmpfc
+docker rmi twsnmp/twsnmpfc
+docker  run  --rm -d  --name twsnmpfc  --net host -v /data/twsnmpfc:/datastore  twsnmp/twsnmpfc
+```
+
+データストアのためのボリュームの設定(`-v /data/twsnmpfc:/datastore`)は、お使いの環境に合わせて変更してください。
 
 
 # 停止する時のコマンド
+
+大量のsyslogや Netflowを受信していて沢山のレポートデータを記録している（DBのサイズが毎日数GB増える）TWSNMP FCがDocker環境で動作している場合には停止する時に注意が必要です。
 
 停止する時は、
 
