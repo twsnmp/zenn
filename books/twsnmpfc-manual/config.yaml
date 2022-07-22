@@ -60,4 +60,5 @@ chapters:
   - knowhow_noconsole_win
   - knowhow_autostart_linux
   - knowhow_start_stop_on_docker
+  - knowhow_kubernetes
   - knowhow_msstore_tasksc
