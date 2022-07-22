@@ -59,3 +59,4 @@ chapters:
   - knowhow_chart
   - knowhow_noconsole_win
   - knowhow_autostart_linux
+  - knowhow_stop_on_docker
