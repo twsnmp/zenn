@@ -13,9 +13,11 @@ chapters:
   - node_info
   - node_conf
   - polling_conf
+  - ping
   - mib_browser
   - panel
   - host_resource
+  - port
   - polling_list
   - polling_info
   - discover
