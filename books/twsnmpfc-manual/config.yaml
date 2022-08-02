@@ -55,6 +55,7 @@ chapters:
   - influxdb_conf
   - grok_conf
   - datastore_conf
+  - datastore_files
   - resource_monitor
   - backup_restore
   - knowhow_rx
