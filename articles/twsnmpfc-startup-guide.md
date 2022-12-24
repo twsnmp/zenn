@@ -16,6 +16,10 @@ Docker版の場合は常に最新のバージョンを利用できます。
 WindowsやMac OSのDocker Desktop環境だとネットワーク環境の問題で
 ARP監視やデバイスレポートに制限があります。
 
+# Windows版の動画解説
+
+https://youtu.be/tR-Unzsmj_c
+
 # Windows版のインスール
 
 Windows版は、Microsoft Storeに公開しています。(v.1.11.0から）
@@ -57,9 +61,6 @@ Windowsのmsiファイルや実行ファイルの署名を検証するために�
 https://lhx98.linkclub.jp/twise.co.jp/download/twsnmp.cer
 
 の証明書をインポートしてください。
-
-ZIPファイルは署名なしの実行ファイルが実行ファイルが一つだけあります。
-お好きなフォルダに解凍してください。
 
 # Mac OS版のインストール
 
@@ -204,11 +205,16 @@ Usage of ./twsnmpfc.app:
 
 Windowsの場合はデフォルトで
 
+```
 C:\Program Files\TWSNMP FC\twsnmpfc.exe
+```
+
 にインストールされます。PATHなどを設定するかフルパスでコマンドを実行してください。
 Linuxでパッケージからインストールした場合は、
 
+```
 /opt/twsnmpfc
+```
 
 にインストールされます。
 
@@ -278,6 +284,7 @@ http://<TWSNMP FCのIP>:8080/
 
 のような画面が表示されるはずです。
 
+# ログイン
 ＜ログイン＞ボタンをクリックすれば
 
 ![](/images/twsnmpfc-startup-guide/2022-05-15_08-14-35.png)
@@ -293,6 +300,8 @@ http://<TWSNMP FCのIP>:8080/
 
 です。ログインしたら空のマップが表示されます。
 
+# マップ設定
+
 「システム設定」ー「マップ」メニューからマップ設定をクリックします。
 
 ![](/images/twsnmpfc-startup-guide/2022-05-15_08-17-43.png)
@@ -300,7 +309,9 @@ http://<TWSNMP FCのIP>:8080/
 マップ名、ユーザーID、パスワードを変更してください。
 その他マップ名などの必要な項目を変更してください。
 
-設定できたら「自動発見」メニューから自動発見画面
+# 自動発見
+
+マップ設定ができたら「自動発見」メニューから自動発見画面
 
 ![](/images/twsnmpfc-startup-guide/2022-05-15_08-20-04.png)
 
@@ -323,8 +334,8 @@ Windows,Mac OS,Linuxのパッケージからインストールすると各種セ
 
 センサープログラムの説明は
 
-https://note.com/twsnmp/n/nba97c75b0efc
+https://zenn.dev/twsnmp/books/twsnmpfc-manual/viewer/sensors
 
 
-をみてください。(いずれ、Zennにも書きます)
+をみてください。
 
