@@ -8,8 +8,7 @@ SNMPのMIBを管理対象ノードから取得して表示するためのMIBブ�
 # MIBブラウザーを使うための準備
 ノードの設定でSNMPのアクセスするための設定をしておく必要があります。SNMPでアクセスできないノードからはMIBを取得できません。
 
-![](/images/books/twlogaian-manual/picture_pc_d62cdd7e5a34c14c81ee6777dabe90be2.png)
-
+![](images/books/twsnmpfc-manual/2023-01-04_21-21-41.png)
 
 # MIBブラウザー画面の表示方法
 
@@ -67,11 +66,11 @@ SNMPのMIBを管理対象ノードから取得して表示するためのMIBブ�
 # MIBツリー
 ＜MIBツリー＞ボタンをクリックするとMIBのオブジェクト名を選択するために
 
-![](/images/books/twlogaian-manual/1638394244374-HR2U7N3mOF.png)
+![](images/books/twsnmpfc-manual/2023-01-04_21-32-13.png)
 
 のようなダイアログを表示します。ツリーを展開して選択すれば、オブジェクト名に入力できます。オブジェクト名の検索に文字列を入力すれば、
 
-![](/images/books/twlogaian-manual/1638394325814-v4YoKii2Ze.png)
+![](images/books/twsnmpfc-manual/2023-01-04_21-35-49.png)
 
 のようにツリーをフィルター表示できます。
 オブジェクト名を選択して＜取得＞ボタンをクリックすれば、MIBブラウザーの画面に戻ります。MIBツリーのダイアログを閉じる場合は＜キャンセル＞ボタンをクリックします。
