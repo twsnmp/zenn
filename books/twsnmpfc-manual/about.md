@@ -12,6 +12,9 @@ title: "TWSNMP FCとは"
 きっと他の人にも役立つと思っています。
 
 
+# 動画マニュアル
+
+https://youtu.be/XfTevtxHBWQ
 
 # 安全を目指すネットワーク管理
 
