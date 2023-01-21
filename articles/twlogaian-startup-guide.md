@@ -20,6 +20,14 @@ TWLogAIANの仕組みは
 全文検索エンジンにログを読み込んで検索できるようになっています。
 検索結果を機械学習(AI)や可視化によって分析を助けてくれます。
 
+# 動画マニュアル
+
+動画でだいたいの使い方を説明しています。
+
+https://youtu.be/XiNhuSlLYLw
+
+
+注意：__猫の世界にはダークサイドはないのでホワイトハッカーしかいません。__
 # インストール
 
 ## Windows版のインストール
@@ -43,37 +51,33 @@ https://note.com/twsnmp/n/n81b59b61c56e?magazine_key=m9c88e79743b6
 
 ## Mac OS版のインストール
 
-最新リリースのインストラーは
+v1.7.0以降は、Mac OS版もApple App Storeで公開しています。
 
-https://github.com/twsnmp/TWLogAIAN/releases
-
-からダウンロードできます。
-
-TWLogAIAN.dmgファイルをダウンロードしてください。
-
-ダウンロードしたTWLogAIAN.dmgをダブルクリックするとライセンス確認の画面が表示されます。
-
-![](/images/twlogaian-startup-guide/2022-05-19_04-33-48.png)
+![](/images/books/twlogaian-manual/2023-01-21_15-51-47.png)
 
 
-同意しないとインストールできません。＜同意します＞をクリックすると
+ストアのリンクは
+https://apps.apple.com/app/twlogaian/id1664596440
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-35-06.png)
+です。こちらからインストールしてください。
 
-私の助手の猫が言っているとおりTWLogAIANをApplicationsフォルダにドラッグ＆ドロップすればインストールできます。
 
 # TWLogAIANの起動
 
 Windowsの場合はスタートメニューからMac OSの場合はランチャーからなどお好きな方法で起動してください。
 ようこそ画面が表示されるはずです。
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-37-18.png)
+![](/images/books/twlogaian-manual/2023-01-21_15-56-31.png)
 
 右上の🌙マークをクリックすれば、ダークモードになります。
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-37-25.png)
+![](/images/books/twlogaian-manual/2023-01-21_15-57-05.png)
 
 私はダークモードが好きです。たぶんホワイトハッカーの目指す人はダークモードが好きだと思います。
+
+v1.7.0から右上のメニューで画面の表示を英語に切り替えられます。
+
+![](/images/books/twlogaian-manual/2023-01-21_15-58-07.png)
 
 # TWLogAIANによる分析の流れ
 
@@ -102,7 +106,7 @@ Windowsの場合はスタートメニューからMac OSの場合はランチャ�
 
 対象のログを読み込む場所を指定したら読み込む時の処理の設定です。
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-48-20.png)
+![](/images/books/twlogaian-manual/2023-01-21_16-05-19.png)
 
 圧縮ファイルの中の圧縮ファイルの扱いやタイムゾーンがない場合の時刻の扱い、
 読み込むログをフィルターで制限する設定、ログの中からデータを抽出するための設定、
@@ -116,21 +120,31 @@ IPアドレスなどの情報からホスト名や位置情報を調べる設定
 ＜インデックス作成＞ボタンをクリックするとログの読み込みを開始します。
 読み込み中は進行状況を表示します。
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-50-33.png)
+![](/images/books/twlogaian-manual/2023-01-21_16-37-31.png)
 
 ## ログの検索
 
 ログを読み込んでインデックスの作成が完了すると検索画面が表示されます。
 とりあえず＜検索＞ボタンをクリックすれば
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-52-55.png)
+![](/images/books/twlogaian-manual/2023-01-21_16-39-35.png)
 
 のように検索できます。
+
+ログの読み込みの状況は、＜処理結果＞ボタンで確認できます。
+
+![](/images/books/twlogaian-manual/2023-01-22_05-50-35.png)
+
 検索条件を指定して検索することもできます。
 
-![](/images/twlogaian-startup-guide/2022-05-19_04-54-37.png)
+![](/images/books/twlogaian-manual/2023-01-21_16-42-25.png)
 
- 検索条件は選択しただけでは反映されません。＜＋＞ボタンをクリックして
- 検索文に入力してください。
+時間範囲や位置情報、
 
- それでは快適なログ分析をお楽しみください。
+IPアドレスから位置情報を抽出する設定にすれば、
+
+![](/images/books/twlogaian-manual/2023-01-21_17-45-57.png)
+
+のようなレポートも表示できます。
+ 
+ それでは快適なログ分析ライフをお楽しみください。
