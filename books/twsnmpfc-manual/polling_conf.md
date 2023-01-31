@@ -22,7 +22,7 @@ TWSNMP FCのポーリング設定画面についての説明です。
 
 # ポーリング設定画面
 
-![](/images/books/twlogaian-manual/picture_pc_d62cdd7e5a34c14c81ee6777dabe90be.png)
+![](/images/books/twsnmpfc-manual/2023-02-01_05-25-02.png)
 
 のような画面です。
 
