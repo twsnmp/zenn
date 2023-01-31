@@ -23,15 +23,15 @@ https://youtu.be/eVWcjkhz7WU
 
 初期状態では、
 
-![](/images/books/twsnmpfc-manual/2022-08-01_17-07-27.png)
+![](/images/books/twsnmpfc-manual/2023-02-01_04-53-48.png)
 
 のような画面です。
 
-宛先のIPアドレス、回数、サイズを指定できます。
+宛先のIPアドレス、回数、サイズ、TTLを変更できます。
 
 実行すると
 
-![](/images/books/twsnmpfc-manual/1652558400997-ZL2iRzc0cu.png)
+![](/images/books/twsnmpfc-manual/2023-02-01_04-57-30.png)
 
 のように結果が表示できます。
 動作は、
