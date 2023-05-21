@@ -30,8 +30,56 @@ Microsoft Storeから直接インストールできます。
 
 ![](/images/twsnmpfc-startup-guide/1652299365939-kOn9ypqOW9.png)
 
-Server OSなどにインストールしたい場合はMSI形式のインストラーも用意
-しています。
+Server OSなどにインストールしたい場合は
+Scoopからか、MSI形式のインストラーを利用する方法でインストールして
+ください。
+
+# Windows版をScoopからインストール
+
+Windows版はScoopのtwsnmp Bucketで公開しています。(v1.25.0から)
+
+## Scoopのインストール
+
+Scoopのサイト
+
+https://scoop.sh/
+
+に記載の方法で
+
+```
+>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+>irm get.scoop.sh | iex
+```
+
+でScoopをPowerShellからインストールします。
+
+## TWSNMP FCのインストール
+
+```
+>scoop bucket add twsnmp https://github.com/twsnmp/scoop-bucket
+>scoop install twsnmpfc
+```
+
+でインストールできます。
+Microsoft StoreやMSIからインストールした場合との違いは、
+実行ファイルにPATHが通っていることです。
+
+コマンドラインから
+
+```
+>twsnmpfc.exe -datastore c:\twsnmpfc -local
+```
+
+のように指定して起動できます。起動ツールやセンサーも起動できます。
+インストールされるセンサーは
+
+- twWifiScan.exe: 無線APセンサー
+- twWinlog.exe:Windowsイベントログセンサー
+- twpcap.exe:パケットキャプチャーセンサー
+
+です。これらをコマンドラインから起動できます。
+
+
 
 # Windows版のアンインストール
 
@@ -132,14 +180,33 @@ WindowのTWSNMP FCの起動は
 ![](/images/twsnmpfc-startup-guide/2022-05-15_07-54-30.png)
 
 
-のような感じです。
+のような感じです。(v1.24.0まで)
+v1.25.0からは
+
+![](/images/books/twsnmpfc-manual/2023-05-21_05-19-12.png)
+
+起動画面は
+![](/images/books/twsnmpfc-manual/2023-05-21_05-19-28.png)
+
+です。
+
 Mac OSは
 
 ![](/images/twsnmpfc-startup-guide/2022-05-15_07-54-38.png)
 
+です。(v.24.0まで)
+
+v1.25.0からは
+![](/images/books/twsnmpfc-manual/2023-05-22_05-58-41.png)
+
+起動画面は
+
+![](/images/books/twsnmpfc-manual/2023-05-22_05-57-34.png)
+
 です。
 
 どちらのOSでも起動は３ステップです。
+（v1.25.0以降はリストの右下の＜＋＞ボタンから起動するプログラムを選択してください。）
 
 1. データストアのフォルダを選択する
 
@@ -153,8 +220,8 @@ Mac OSは
 必要なパラメータを入力して起動ボタンをクリックするだけです。
 
 :::message alert
-※Mictosoft Stroreからインストールした場合、タスクスケジューラに登録しても起動できないことが
-わかっています。以下の説明を見てください。
+※Mictosoft Stroreからインストールした場合、タスクスケジューラに登録できません。
+自力でやりたい場合は、以下の説明を見てください。
 :::
 
 https://note.com/twsnmp/n/na5c9749b90a3
