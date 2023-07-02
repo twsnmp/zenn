@@ -53,7 +53,7 @@ https://scoop.sh/
 
 でScoopをPowerShellからインストールします。
 
-## TWSNMP FCのインストール
+### TWSNMP FCのインストール
 
 ```
 >scoop bucket add twsnmp https://github.com/twsnmp/scoop-bucket

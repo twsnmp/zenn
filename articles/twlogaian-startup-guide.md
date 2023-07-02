@@ -49,6 +49,46 @@ https://github.com/twsnmp/TWLogAIAN/releases
 https://note.com/twsnmp/n/n81b59b61c56e?magazine_key=m9c88e79743b6
 にあります。
 
+## Windows版をScoopからインストール
+
+Windows版はScoopのtwsnmp Bucketで公開しています。(v1.25.0から)
+
+### Scoopのインストール
+
+Scoopのサイト
+
+https://scoop.sh/
+
+に記載の方法で
+
+```
+>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+>irm get.scoop.sh | iex
+```
+
+でScoopをPowerShellからインストールします。
+
+### TWLogAIANのインストール
+
+```
+>scoop bucket add twsnmp https://github.com/twsnmp/scoop-bucket
+>scoop install twlogaian
+```
+
+でインストールできます。
+Microsoft StoreやMSIからインストールした場合との違いは、
+実行ファイルにPATHが通っていることです。
+アップデートもできます。
+
+コマンドラインから
+
+```
+>TWLogAIAN.exe
+```
+
+のように指定して起動できます。
+
+
 ## Mac OS版のインストール
 
 v1.7.0以降は、Mac OS版もApple App Storeで公開しています。
