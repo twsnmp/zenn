@@ -20,6 +20,9 @@ https://www.microsoft.com/store/apps/9P8TQLG999Z3
 
 # Mac OS版
 
+Apple App Storeからインストールできます。
+https://apps.apple.com/app/twlogaian/id1664596440
+
 ## インストーラーのダウンロード
 Mac OS版の最新のリリースは
 
