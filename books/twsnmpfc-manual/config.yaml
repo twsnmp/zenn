@@ -12,6 +12,7 @@ chapters:
   - node_list
   - node_info
   - node_conf
+  - node_memo
   - polling_conf
   - ping
   - mib_browser
@@ -44,13 +45,19 @@ chapters:
   - windows_priviage_report
   - windows_process_report
   - windows_task_report
+  - report_ifport
+  - report_fdbtable
   - eventlog
   - syslog
-  - snmp_tarp
+  - snmp_trap
   - netflow
+  - gnmi
+  - otel
+  - pki
   - arp_log
   - map_conf
   - notify_conf
+  - notify_schedule
   - report_conf
   - influxdb_conf
   - grok_conf
