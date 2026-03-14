@@ -1,0 +1,21 @@
+title: "TWSNMP FK マニュアル"
+summary: "TWSNMP FK（復刻版）の詳しい使い方を解説するマニュアルです。ネットワークの可視化、監視、分析、セキュリティ管理まで幅広く解説します。"
+topics: ["SNMP", "Network", "TWSNMP", "Monitoring"]
+published: true
+price: 0 # 無料に設定
+chapters:
+  - intro
+  - getting_started
+  - map_screen
+  - menus
+  - discover
+  - editing
+  - tools
+  - node_details
+  - polling
+  - advanced
+  - logs
+  - traffic
+  - security
+  - system
+  - reference
