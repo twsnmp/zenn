@@ -8,8 +8,8 @@ published: true
 # はじめに
 
 この記事はTWSNMP FCをインストールして使い始めるまでの説明です。
-TWSNMP FCは20年以上前に作ったSNMPv3対応のネットワーク管理ソフト
-TWSNMPマネージャを2021年の最新技術でリニューアルしたソフトです。
+TWSNMP FCは25年以上前に作ったSNMPv3対応のネットワーク管理ソフト
+TWSNMPマネージャを2021年の技術でリニューアルしたソフトです。
 Windows/Mac OS/Linuxで動作しますが一番オススメの環境はLinux上のDocker環境です。
 Docker版の場合は常に最新のバージョンを利用できます。
 リリース版は少し遅れて配布しています。
@@ -244,28 +244,100 @@ twsnmpfc.app --local
 ```
 % ./twsnmpfc.app -h
 Usage of ./twsnmpfc.app:
- -cpuprofile file
-   	write cpu profile to file
- -datastore string
-   	Path to Data Store directory (default "./datastore")
- -host string
-   	Host Name for TLS Cert
- -ip string
-   	IP Address for TLS Cert
- -local
-   	Local only
- -memprofile file
-   	write memory profile to file
- -password string
-   	Master Password (default "twsnmpfc!")
- -ping string
-   	ping mode icmp or udp
- -port string
-   	port (default "8080")
- -restore string
-   	Restore DB file name
- -tls
-   	Use TLS
+  -autoCertEmail string
+    	EMail address for ACME
+  -autoCertInsecure
+    	Dont verify Server Cert for ACME
+  -autoCertSANs string
+    	Auto cert SANs
+  -autoCertURL string
+    	ACME Server URL for auto update server cert
+  -backup string
+    	Backup path
+  -caCert string
+    	CA Cert path
+  -checkPollingLog
+    	Check and convert old polling logs
+  -clearLog
+    	Clear all logs
+  -clientCert string
+    	Client Cert
+  -clientKey string
+    	Client Key path
+  -compact string
+    	DB Conmact path
+  -copybackup
+    	Use copy mode on backup
+  -cpuprofile file
+    	write cpu profile to file
+  -datastore string
+    	Path to Data Store directory (default "./datastore")
+  -deleteOldLog string
+    	Batch delete old log
+  -host string
+    	Host Name for TLS Cert
+  -ip string
+    	IP Address for TLS Cert
+  -local
+    	Local only
+  -mcp
+    	Enable MCP server
+  -mcpFrom string
+    	Access control for MCP server
+  -mcpMode string
+    	MCP server trasport mode (sse | auth | noauth) (default "noauth")
+  -memprofile file
+    	write memory profile to file
+  -mqttCert string
+    	MQTT server cert path
+  -mqttFrom string
+    	MQTT server clintes
+  -mqttKey string
+    	MQTT server private key path
+  -mqttTCPPort int
+    	MQTT server TCP port (default 1883)
+  -mqttUsers string
+    	MQTT server users
+  -mqttWSPort int
+    	MQTT server Websock port (default 1884)
+  -netflowPort int
+    	netflow port (default 2055)
+  -otelCA string
+    	OpenTelementry CA cert path
+  -otelCert string
+    	OpenTelemetry server cert path
+  -otelGRPCPort int
+    	OpenTelemetry server gRPC port (default 4317)
+  -otelHTTPPort int
+    	OpenTelemetry server HTTP port (default 4318)
+  -otelKey string
+    	OpenTelemetry server key path
+  -password string
+    	Master Password (default "twsnmpfc!")
+  -ping string
+    	ping mode icmp or udp
+  -port string
+    	port (default "8080")
+  -resetPassword
+    	Reset user:password to twsnmp:twsnmp
+  -restore string
+    	Restore DB file name
+  -saveMap int
+    	Save Map Interval default: windows=5min,other=60min (default -1)
+  -sflowPort int
+    	sflow port (default 6343)
+  -sshdPort int
+    	ssh server port (default 2222)
+  -syslogPort int
+    	syslog port (default 514)
+  -tcpPort int
+    	tcp server port (default 8086)
+  -timeout int
+    	session timeout 0 is unlimit (default 24)
+  -tls
+    	Use TLS
+  -trapPort int
+    	snmp trap port (default 162)
 ```
 
 です。
