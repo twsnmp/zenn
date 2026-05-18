@@ -12,7 +12,7 @@ TWSLA は、超高速の設定不要の CLI ログ アナライザーです。�
 Linux/Mac OSはシェルスクリプトでインストールするのがオススメです。
 
 ```bash
-$curl -sS https://lhx98.linkclub.jp/twise.co.jp/download/install.sh | sh
+curl -sS https://raw.githubusercontent.com/twsnmp/twsla/main/install/install.sh | sh
 ```
 
 Linux/Mac OSはhomebrewでもインストールできます。
