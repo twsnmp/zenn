@@ -32,3 +32,7 @@ AIアシスタント（ClaudeやChatGPTなど）からTWSNMP FKのデータを�
 
 ![](/images/twsnmpfk/2023-11-28_04-32-55.png)
 ![](/images/twsnmpfk/2023-11-28_04-43-51.png)
+
+## LLM・AI連携機能 (AIアシスタント)
+
+LLM（OpenAI, Gemini, Claude, Ollamaなど）と連携し、ノードの総合診断、ログのAI解説、自然言語やSyslogからのポーリング自動作成アシスト、各種レポートの傾向要約を行う機能です。詳細は [LLM・AI連携機能](ai) を参照してください。
