@@ -52,6 +52,23 @@ SCP、SSHやTWSNMPのログを読み込むためには、URLを指定します�
 **Windows イベントログ（evtx）** (v1.1.0～)
 evtxファイルを読み込む時に `--json` を指定すれば、WindowsのイベントログをJSON形式で読み込みます。
 
-## その他のオプション
-ログの保存先データベースは `-d` オプションで指定します（省略するとカレントディレクトリの `twsla.db` になります）。
+**FTP / FTPS** (v2.1.0～)
+`ftp://user:pass@host/path/to/log` や `ftps://...` を指定することで、FTPサーバーから直接ログファイルをダウンロードしてインポートできます。
+
+**twlogeye統合（Loki / Elasticsearch / OpenSearch）** (v2.0.0～)
+`twlogeye://...` をソースに指定することで、twlogeye経由でGrafana Loki、Elasticsearch、OpenSearchなどの分散ログ基盤から直接ログをインポートできます。
+
+## データストア形式とその他のオプション (v2.0.0～)
+
+ログの保存先データベースは `-d`（または `--datastore`）オプションで指定します（省略時は `./twsla.db`）。指定するファイルの拡張子によって自動的にストレージエンジンが切り替わります。
+
+- **`.parquet` (Apache Parquet)**: 列指向フォーマット。数百万行を超える大規模ログでも圧倒的な圧縮率と高速なクエリ・分析性能を発揮します。
+- **`.badger` (Badger)**: 高速なKey-Valueストア。大量データの書き込み・イテレーションに優れています。
+- **`.db` (bbolt, デフォルト)**: 軽量で安定した単一ファイル組み込みDB。
+
+```bash
+# Parquet形式でインポートする例
+$ twsla import -d ./access.parquet access.log.gz
+```
+
 また、`--noDelta` を指定すると、タイムスタンプの時間差を取得・保存しないため高速化が見込めます。読み込み速度はログが時系列に並んでいるほど速くなります。

@@ -67,17 +67,13 @@ TWLogAIANではGrokパターンをできるだけ簡単に作成できる機能�
 
 編集したGrokの抽出パターンをテストするためのログをコピペするエリアです。
 
-## ＜自動抽出パターン生成＞ボタン
+## ＜自動抽出パターン生成＞ と ＜AIパターン生成＞ (v2.1.0)
 
-テストデータの１行目のログを解析して自動でパターンを作成します。タイムスタンプ、IPアドレス、メールアドレス、URLなどを自動で変換します。
-このマニュアルを書いている時に、splunk的な
+テストデータの１行目のログを解析して自動でパターンを作成する「自動抽出パターン生成」に加え、v2.1.0より**「AIパターン生成」**に対応しました。
 
-```
-ip=192.168.1.1
-```
+![](/images/books/twlogaian-manual/grok_ai_generate.png)
 
-のようなパターン自動で認識できるようするアイデアを組み込んであります。
-
+テストデータに実際のログを貼り付け、＜AIパターン生成＞ボタンをクリックすると、AI（LLM）がログの構造を推論し、タイムスタンプやIP、ホスト名、セベリティ、可変メッセージなどを適切に抽出するGrokパターンを自動で組み立てます。手動で細かく正規表現を記述する手間が大幅に削減されます。
 
 ## ＜終了＞ボタン
 
@@ -165,7 +161,27 @@ extractortypes:
 
 のように追加されます。
 
-このような定義ファイルを作って配布すれば、特殊なログの分析に役に立つと思います。
+この様な定義ファイルを作って配布すれば、特殊なログの分析に役に立つと思います。
+
+---
+
+# Sigma CLIツール機能 (v2.2.0)
+
+TWLogAIANの実行バイナリは、ターミナルから引数を指定して実行することで、Sigmaルールのテストやデータストアに対するバッチスキャン、Wazuhルール変換を行えるCLIツールとしても利用できます。
+
+```bash
+# 組み込みルールパック一覧の確認
+twlogaian sigma list
+
+# 単一ログに対するルールマッチングテスト
+twlogaian sigma test -p linux-auth -l "Failed password for invalid user admin from 192.168.1.50 port 22 ssh2"
+
+# 保存したParquetデータストアに対するSigma一括スキャン
+twlogaian sigma scan -d ./datastore.parquet -p windows-ad,network-threats
+
+# Wazuh XMLルールファイルをSigma形式（YAML）に一括変換
+twlogaian sigma wazuh2sigma -i /var/ossec/rules/ -o ./sigma-rules/
+```
 
 
 

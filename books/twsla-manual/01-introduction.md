@@ -69,6 +69,7 @@ Available Commands:
   help        Help about any command
   import      Import log from source
   mcp         MCP server
+  model       Manage local LLM models
   relation    Relation Analysis
   search      Search logs.
   sigma       Detect threats using SIGMA rules
@@ -76,8 +77,17 @@ Available Commands:
   time        Time analysis
   twlogeye    Import notify,logs and report from twlogeye
   twsnmp      Get information and logs from TWSNMP FC
+  update      Update twsla to the latest or specified version
   version     Show twsla version
 ```
+
+## v2.0.0〜v2.2.0 の主な強化ポイント
+
+- **内蔵ローカルLLM (tensai) と `model` コマンド**: 外部Ollamaサーバー不要で、PCローカルのGPU（Metal, DirectX, Vulkan）を使って高速にAI推論・ログ分析を実行可能。
+- **Sigmaルール脅威検知の強化 (`sigma`)**: 75種類の組み込みSigma/Wazuhルールパックを標準搭載。ディレクトリ指定なしで即座に脅威スキャンを実行。
+- **データストア形式の拡充**: 従来のbbolt（`.db`）に加え、列指向で超高圧縮な **Apache Parquet**（`.parquet`）や高速な **Badger**（`.badger`）に対応。
+- **MCPサーバー (`mcp`)**: Claude Desktopなどの生成AIツールから直接twslaを呼び出してログ分析を依頼できるModel Context Protocolサーバー機能を搭載。
+- **データソース拡張**: FTP/FTPSインポート、twlogeye統合（Grafana Loki, Elasticsearch, OpenSearch）に対応。
 
 ## ソースコード
 

@@ -113,3 +113,35 @@ IPアドレスから位置情報を取得する項目の変数名を指定しま
 
 GeoIPのデータベースファイルを指定します。
 
+---
+
+# AI (LLM) 連携設定 (v2.1.0 強化)
+
+TWLogAIAN では、検索やレポートのAI解説、自然言語クエリ作成、Grokパターン生成にLLMを活用できます。
+
+## 内蔵ローカルLLM (tensai) & GPU管理
+
+外部APIやOllamaサーバーなしで動作する**内蔵ローカルLLM（tensaiパッケージ & WebGPU）**に対応しました。
+設定画面の「ローカルモデル管理」ボタンから、実用的な推奨GGUFモデルをワンクリックでダウンロード・選択できます。WebGPUネイティブライブラリによるGPUアクセラレーションも自動管理されます。
+
+![](/images/books/twlogaian-manual/model_manager.png)
+
+外部プロバイダー（OpenAI, Gemini, Claude, Ollama）への接続も引き続きサポートしています。
+
+---
+
+# Sigma 脅威検知・ルール設定 (v2.2.0)
+
+Sigma検知機能の有効化、評価対象とする組み込みルールパック（Linux認証、ネットワーク脅威、Windows AD、Web攻撃、Wazuhコンプライアンス等）の選択、およびローカルフォルダーに配置したカスタムSigmaルールのパスを指定できます。
+
+![](/images/books/twlogaian-manual/sigma_setting.png)
+
+---
+
+# Ask AI（AIに質問する） (v2.1.0)
+
+分析中のログデータや疑問点について、AIアシスタントと対話できる画面です。
+「このエラーログは何を意味しているか」「直近でアクセスが急増したホストの理由は何か」などを自然言語で尋ねることで、ログの文脈を踏まえた実践的な回答が得られます。
+
+![](/images/books/twlogaian-manual/ask_ai_screen.png)
+
