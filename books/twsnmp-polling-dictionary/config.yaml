@@ -12,6 +12,7 @@ chapters:
   - http_https
   - dns
   - ntp
+  - stun
   - snmp_basic
   - snmp_mib
   - resource_monitor
